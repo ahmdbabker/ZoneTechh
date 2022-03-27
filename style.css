@@ -1,0 +1,1440 @@
+*
+{
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 4%;
+}
+
+.top-nav{
+    background-image: linear-gradient(to left , #ff5d5e , #df2020);
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-weight: 400;
+}
+
+.top-nav .infos span i{
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+.top-nav .contact-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav .infos{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav .contact{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav .contact i,a{
+    margin: 0 7px;
+    font-size: 22px;
+    color: white;
+}
+
+nav{
+    width:100%;
+    height: 90px;
+    line-height: 75px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav .logo{
+    width: 8%;
+    height: 100%;
+}
+
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+    font-size: 21px;
+}
+
+nav ul li a.active{
+    color:  #df2020;
+}
+
+nav .fas{
+    position: absolute;
+    left: 45px;
+    top:25px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .fa-bars{
+    position: relative;
+    left: 20px;
+    top:25px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.main-content{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(2.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-content .qote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);  
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.main-content .qote h1{
+    border: 3px solid white;
+    padding: 9px;
+}
+
+.main-content .qote .uniqe{
+    margin-bottom: 10px ;
+}
+
+.main-content .qote a{
+    background-image: linear-gradient(to top ,#df2020,#ec3636 );
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+}
+
+.main-content .lang{
+    position: relative;
+    top: 20px;
+}
+.main-content .lang a{
+    text-decoration: none;
+    font-size: 14px;
+    border:1px solid white;
+    padding: 4px;
+    margin: 10px ;
+    
+}
+
+.who .two-who{
+    display: flex;
+    justify-content: space-between;
+}
+
+.who .whoo{
+    width: 50%;
+}
+
+.who .whoo h1{
+    color: #df2020;
+}
+.who .who-photo{
+    width: 40%;
+}
+
+.who .who-photo img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.6;
+}
+
+.serviecs{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.serviecs .serv-title small{
+    color: #df2020;
+}
+
+.serviecs .serv-title{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+}
+
+.serviecs .all-services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.serviecs .all-services .in-ser-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviecs .all-services .in-ser-two .icon{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.serviecs .all-services .in-ser-two .icon i{
+    color: #df2020;
+    font-size: 50px;
+}
+
+.serviecs .service{
+    width: 31%;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    margin: 20px 5px;
+    padding: 15px;
+}
+
+.hosting{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+.hosting .host-title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hosting .all-hosting{
+    display: flex;
+    justify-content: space-between;
+    align-self: auto;
+    align-items: baseline;
+}
+
+.hosting .all-hosting .host{
+    width: 31%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    padding-bottom: 10px;
+}
+
+.hosting .all-hosting .host .same{
+    background-image:linear-gradient(to left , #66dbc4 ,#1cb99a);
+    color: white;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.hosting .all-hosting .host .currne{
+    line-height: 35px;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+    color: black;
+}
+
+.hosting .all-hosting .host span{
+    margin: 15px 0;
+    color: rgb(87, 86, 86);
+}
+
+.hosting .all-hosting .host span i{
+    margin-left:4px ;
+    color: #df2020;
+}
+
+.hosting .all-hosting .host a{
+    color: black;
+    background-image: linear-gradient(to top ,#df2020, #e64040 );
+    padding: 7px ;
+    text-decoration: none;
+    width: 40%;
+    color: white;
+    font-size: 18px;
+    margin:  0 auto;
+}
+
+.admin-partners{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    height: 1100px;
+}
+
+.admin-partners .bst-partner{
+    margin-top: 40px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    line-height: 40px;
+}
+
+.admin-partners .bst-partner small{
+    color: #df2020;
+}
+
+.admin-partners .bst-partner .partt{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    height: 240px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-partners .bst-partner .partt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.admin-partners .tiitle{
+    text-align: center;
+    margin:  0 auto;
+}
+
+.admin-partners .admin{
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.admin-partners .admin img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.admin-partners .partners{
+    position: relative;
+    top: 70px;
+    border-top: 1px solid lightgray;
+}
+
+.admin-partners .partners .swiper {
+    width: 100%;
+    height: 200px;
+    /* margin-top: 60px; */
+    position: relative;
+    top: 50px;
+}
+
+.admin-partners .partners .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.admin-partners .partners .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.startegy{
+    margin-top: 40px;
+    border-top: 1px solid lightgray
+}
+
+.startegy .strategy-title{
+    text-align: center;
+    margin:  0 auto;
+    line-height: 35px;
+}
+
+.startegy .strategy-title small{
+    color: #df2020;
+}
+
+.startegy .all-strat{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+}
+
+.startegy .strat{
+    width: 31%;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+    margin: 15px 2px;
+    padding: 7px;
+}
+
+.startegy .in-strat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.startegy .in-strat .num{
+    padding: 10px;
+    color: #df2020;
+    font-size: 35px;
+}
+
+.startegy .in-strat .informa{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color:rgb(71, 71, 71);
+}
+
+.numbers{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.numbers .numbres-title{
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.numbers .numbres-title small{
+    color: #df2020;
+}
+
+.customers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers .single-custom{
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.customers .single-custom h1 i{
+    color: #df2020;
+    font-size: 60px;
+}
+
+.customers .single-custom h2{
+    font-size: 40px;
+}
+
+.footer{
+    background-image: linear-gradient(to left , #df2020 ,#e03e3e );
+    height: 334px;
+    width: 100%;
+    color: white;
+}
+
+.footer .all-sides{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer .all-sides .col img{
+    width: 45%;
+    height:140px;
+}
+
+.footer .all-sides .col{
+    width: 25%;
+    position: relative;
+    top: 30px;
+}
+
+.footer .all-sides .col h1{
+
+    font-size: 25px;
+    width: 70%;
+    margin: auto auto;
+}
+
+.footer .all-sides .col ul {
+    list-style: none;
+}
+
+.footer .all-sides .col li a{
+    font-size: 17px;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.project{
+    position: relative;
+    top:60px;
+    height: 1000px;
+}
+
+.project .form-two-sides{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project .tit-icon{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 70px;
+}
+
+.project .tit-icon i{
+    color: #df2020;
+}
+
+.project .formms{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .formms input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid lightgray;
+}
+
+.project .formms a{
+    background-color: #db4141;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    width: 20%;
+    font-size: 19px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offers{
+    margin-top:20px;
+}
+
+.offers .tow-sides-offer .of-icon{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.offers .tow-sides-offer .of-icon i{
+    color: #df2020;
+}
+
+.offers .tow-sides-offer .ofer{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer{
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px 1px lightgrey;
+    /* align-items: baseline; */
+}
+
+.offers .tow-sides-offer .ofer .single-ofer h2{
+    line-height: 45px;
+    color: #df2020;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer h1 span{
+    font-size: 40px;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer span{
+
+    margin: 13px 0;
+    color: rgb(124, 124, 124);
+}
+
+.offers .tow-sides-offer .ofer .single-ofer span i{
+    margin-left:7px;
+    color: #df2020;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer a{
+    background-image: linear-gradient(to left , #df2020 ,#df2020);
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.soon
+{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    margin: auto;
+}
+
+.soon .phoooto
+{
+    width: 30%;
+    height: 350px;
+    margin: 40px auto;
+}
+
+.soon .phoooto img
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.soon h1
+{
+    color: lightgray;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+.soon h2
+{
+    color: lightgray;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+.soon a
+{
+    margin: 20px 0;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.get-host .two-get-hosting,.host-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-host{
+    height:550px;
+}
+.get-host .host-title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    line-height: 35px;
+}
+
+.get-host .host-title i{
+    color: #ff5d5e;
+    font-size: 45px;
+}
+
+.get-host .host-title{
+    width: 30%;
+}
+
+.get-host .formms{
+    width: 70%;
+}
+
+.get-host .formms input{
+    width: 100%;
+    border: none;
+    border: 1px solid lightgray;
+    padding: 7px;
+    margin: 10px auto;
+}
+
+.get-host .formms a{
+    background-image: linear-gradient(to top , #ff5d5e , #dd2d2d);
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.whats-teleg{
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.whats-teleg a{
+    background-color: white;
+    width: 50px;
+    font-size: 30px;
+    height: 50px;
+    color: #df2020;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.whats-teleg:hover{
+    opacity: 1.0;
+}
+
+.whats-teleg .onee{
+    color:#4fce50
+}
+
+
+.whats-teleg .twoo{
+    color:#229ED9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width:760px){
+ 
+   
+.container{
+    padding: 0 1%;
+}
+
+.top-nav{
+   display: none;
+}
+
+
+nav{
+    padding: 0 20px;
+    position: relative;
+}
+
+nav .logo{
+    width: 25%;
+    height: 100%;
+}
+
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 75px;
+    left: -100%;
+    transition: 0.3s ease;
+}
+
+nav ul li {
+    display:block;
+    list-style: none;
+    width: 100%;
+}
+
+
+nav .fas{
+    position: absolute;
+    right: 45px;
+    top:35px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    color: #df2020;
+}
+
+nav .fa-bars{
+    position: relative;
+    left: 20px;
+    top:30px;
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+}
+
+nav ul.actiive{
+    position: fixed;
+    left: 0%;
+    z-index: 6999;
+    background-color: white;
+}
+
+
+.main-content{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(2.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-content .qote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);  
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+}
+
+.main-content .qote h1{
+    border: 2px solid white;
+    padding: 3px;
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.main-content .qote a{
+    background-image: linear-gradient(to top ,#df2020,#ec3636 );
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    width: 30%;
+}
+
+
+.who .two-who{
+    display: block;
+}
+
+.who .whoo{
+    width: 100%;
+}
+
+.who .whoo h1{
+    color: #df2020;
+}
+.who .who-photo{
+    width: 100%;
+}
+
+.who .who-photo img{
+    width: 100%;
+    height: 250px;
+    opacity: 0.6;
+}
+
+.serviecs{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.serviecs .serv-title small{
+    color: #df2020;
+}
+
+.serviecs .serv-title{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+}
+
+.serviecs .all-services{
+    display: block;
+}
+
+.serviecs .all-services .in-ser-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviecs .all-services .in-ser-two .icon{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.serviecs .all-services .in-ser-two .icon i{
+    color: #df2020;
+    font-size: 50px;
+}
+
+.serviecs .service{
+    width: 95%;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+
+.hosting{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+.hosting .host-title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hosting .all-hosting{
+    display: block;
+}
+
+.hosting .all-hosting .host{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    padding-bottom: 10px ;
+    margin: 10px 0;
+}
+
+.hosting .all-hosting .host .same{
+    background-image:linear-gradient(to left , #66dbc4 ,#1cb99a);
+    color: white;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.hosting .all-hosting .host .currne{
+    line-height: 35px;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+    color: black;
+}
+
+.hosting .all-hosting .host span{
+    margin: 15px 0;
+    color: rgb(87, 86, 86);
+}
+
+.hosting .all-hosting .host span i{
+    margin-left:4px ;
+    color: #df2020;
+}
+
+.hosting .all-hosting .host a{
+    color: black;
+    background-image: linear-gradient(to top ,#df2020, #e64040 );
+    padding: 7px ;
+    text-decoration: none;
+    width: 40%;
+    color: white;
+    font-size: 18px;
+    margin:  0 auto;
+}
+
+
+.admin-partners{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    height: 1100px;
+}
+
+.admin-partners .tiitle{
+    text-align: center;
+    margin:  0 auto;
+}
+
+.admin-partners .bst-partner{
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    line-height: 40px;
+}
+
+.admin-partners .bst-partner small{
+    color: #df2020;
+}
+
+.admin-partners .bst-partner .partt{
+    width: 43%;
+    margin: 0 auto;
+    text-align: center;
+    height: 190px;
+    margin-top: 20px;
+}
+
+.admin-partners .bst-partner .partt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.admin-partners .admin{
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.admin-partners .admin img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.admin-partners .admin h4{
+    width: 109%;
+}
+
+.startegy{
+    margin-top: 40px;
+    border-top: 1px solid lightgray
+}
+
+.startegy .strategy-title{
+    text-align: center;
+    margin:  0 auto;
+    line-height: 35px;
+}
+
+.startegy .strategy-title small{
+    color: #df2020;
+}
+
+.startegy .all-strat{
+    display: block;
+}
+
+.startegy .strat{
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+    margin: 15px 0px;
+    padding: 7px;
+}
+
+.startegy .in-strat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.startegy .in-strat .num{
+    padding: 10px;
+    color: #df2020;
+    font-size: 35px;
+}
+
+.startegy .in-strat .informa{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color:rgb(71, 71, 71);
+}
+
+.numbers{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.numbers .numbres-title{
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.numbers .numbres-title small{
+    color: #df2020;
+}
+
+.customers{
+    display: block;
+}
+
+.customers .single-custom{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.customers .single-custom h1 i{
+    color: #df2020;
+    font-size: 60px;
+}
+
+.customers .single-custom h2{
+    font-size: 40px;
+}
+
+.footer{
+    background-image: linear-gradient(to left , #df2020 ,#e03e3e );
+    height: 1012px;
+    width: 100%;
+    color: white;
+}
+
+.footer .all-sides{
+    display: block;
+}
+
+.footer .all-sides .col img{
+    width: 65%;
+    height:120px;
+}
+
+.footer .all-sides .col{
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.footer .all-sides .col ul {
+    list-style: none;
+}
+
+.footer .all-sides .col li a{
+    font-size: 19px;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+
+.project{
+    position: relative;
+    top:60px;
+    height: 1200px;
+}
+
+.project .form-two-sides{
+    display: block;
+    /* justify-content: space-between; */
+}
+
+.project .tit-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 70px;
+}
+
+.project .tit-icon i{
+    color: #df2020;
+}
+
+.project .formms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+}
+
+.project .formms input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid lightgray;
+}
+
+.project .formms a{
+    background-color: #db4141;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    width: 50%;
+    font-size: 19px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.offers{
+    margin-top:20px;
+}
+
+.offers .tow-sides-offer .of-icon{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.offers .tow-sides-offer .of-icon i{
+    color: #df2020;
+}
+
+.offers .tow-sides-offer .ofer{
+    width:100%;
+    display: block;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px 1px lightgrey;
+    /* align-items: baseline; */
+}
+
+.offers .tow-sides-offer .ofer .single-ofer h2{
+    line-height: 45px;
+    color: #df2020;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer h1 span{
+    font-size: 40px;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer span{
+
+    margin: 13px 0;
+    color: rgb(124, 124, 124);
+}
+
+.offers .tow-sides-offer .ofer .single-ofer span i{
+    margin-left:7px;
+    color: #df2020;
+}
+
+.offers .tow-sides-offer .ofer .single-ofer a{
+    background-image: linear-gradient(to left , #df2020 ,#df2020);
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.soon
+{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    margin: auto;
+}
+
+.soon .phoooto
+{
+    width: 80%;
+    height: 250px;
+    margin: 40px auto;
+}
+
+.soon .phoooto img
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.soon h1
+{
+    color: lightgray;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+.soon h2
+{
+    color: lightgray;
+    margin: 5px 0;
+    font-size: 40px;
+}
+
+.soon a
+{
+    margin: 20px 0;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+
+
+.get-host{
+    height:550px;
+}
+.get-host .host-title{
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 35px;
+}
+
+.get-host .host-title i{
+    color: #ff5d5e;
+    font-size: 40px;
+}
+
+.get-host .host-title{
+    width: 100%;
+}
+
+.get-host .formms{
+    width: 100%;
+}
+
+.get-host .formms input{
+    width: 100%;
+    border: none;
+    border: 1px solid lightgray;
+    padding: 7px;
+    margin: 10px auto;
+}
+
+.get-host .formms a{
+    background-image: linear-gradient(to top , #ff5d5e , #dd2d2d);
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.get-host .two-get-hosting,.host-title{
+    display: block;
+}
+
+
+.main-content .lang{
+    position: relative;
+    top: 10px;
+}
+.main-content .lang a{
+    text-decoration: none;
+    font-size: 12px;
+    border:1px solid white;
+    padding: 4px;
+    margin: 5px ;
+    
+}
+
+
+.whats-teleg{
+    position: fixed;
+    right: 10px;
+    bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.whats-teleg a{
+    background-color: white;
+    width: 65px;
+    font-size: 30px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.whats-teleg .onee{
+    color:#4fce50
+}
+
+
+.whats-teleg .twoo{
+    color:#229ED9;
+}
+.whats-teleg:hover{
+    opacity: 1.0;
+}
+
+
+
+
+
+
+
+}
